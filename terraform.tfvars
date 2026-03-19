@@ -1,0 +1,20 @@
+primary_region       = "us-east-1"
+secondary_region     = "us-east-2"
+mystic_falls_cidr    = "10.0.0.0/24"
+clock_tower_cidr     = "192.168.0.0/24"
+environment          = "prod"
+key_pair_name        = "my-keypair"
+ec2_ami_id           = "ami-0fc6cf99992956a4a"
+ec2_ami_id_secondary = "ami-075a156f1500285e1"
+allowed_ssh_cidr     = "49.37.169.117/32"
+db_name              = "mysticfallsdb"
+db_username          = "adminuser"
+db_password          = "MyPassword123!"
+iam_user_name        = "mystic-falls-user"
+dynamodb_table_name  = "mystic-falls-table"
+
+common_tags = {
+  Project     = "mystic-falls"
+  ManagedBy   = "terraform"
+  Environment = "prod"
+}
